@@ -7,5 +7,8 @@
 - [ ] Store weather data
     - [X] Parse data
         - [X] Name each condition, and print it out
-    - [ ] No status code means no data, separate/ remove this from weather conditions
-    - [ ]
+    - [X] Create SQLite database
+    - [X] Create table
+    - [ ] Store data
+
+- [ ] Ignore db file in git
