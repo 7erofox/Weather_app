@@ -4,11 +4,13 @@
         - response: Partly cloudy|0.0mm|+14°C|↓24km/h
 
 
-- [ ] Store weather data
+- [X] Store weather data
     - [X] Parse data
         - [X] Name each condition, and print it out
     - [X] Create SQLite database
     - [X] Create table
-    - [ ] Store data
+    - [X] Store data
 
-- [ ] Ignore db file in git
+- [X] Ignore db file in git
+
+- [ ] Add logic to run on a schedule

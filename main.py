@@ -1,6 +1,9 @@
 import requests
 import sqlite3
 from datetime import datetime
+import os
+
+STORE_WEATHER_DATA = os.getenv('WEATHERDATABASE', "weather.db")
 
 create_table_query = """CREATE TABLE IF NOT EXISTS weather (
   id INTEGER PRIMARY KEY, 
@@ -34,7 +37,7 @@ wind_speed = split_weather[3]
 created_at = datetime.now()
 
 
-conn = sqlite3.connect("weather.db")
+conn = sqlite3.connect(STORE_WEATHER_DATA)
 cursor = conn.cursor()
 cursor.execute(create_table_query)
 conn.commit()
