@@ -12,5 +12,3 @@
     - [X] Store data
 
 - [X] Ignore db file in git
-
-- [ ] Add logic to run on a schedule

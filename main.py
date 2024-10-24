@@ -27,7 +27,6 @@ wind_speed
 weather = requests.get('https://wttr.in/Armagh?format=%C|%p|%t|%w')
 true_weather = weather.text
 print(true_weather)
-print(weather.status_code)
 
 split_weather = true_weather.split("|")
 condition = split_weather[0]
